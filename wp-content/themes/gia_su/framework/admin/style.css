@@ -1188,3 +1188,4 @@ body.admin-color-sunrise .mo-panel-tabs,
 body.admin-color-sunrise #cat_sortable .widget-head, body.admin-color-sunrise #sidebarsList .widget-head, body.admin-color-sunrise #customList .widget-head, body.admin-color-sunrise #sidebarsList .widget-head, body.admin-color-sunrise #customList .widget-head  {background: #cf4944;}
 body.admin-color-sunrise .mo-panel-tabs li.active a, body.admin-color-sunrise .mo-panel-tabs li a:hover,
 body.admin-color-sunrise .option-item .ui-slider-handle, body.admin-color-sunrise .tie-options .selected img{background: #dd823b;color: #fff;}
+#tie_sidebar_position_full{display: block !important;}

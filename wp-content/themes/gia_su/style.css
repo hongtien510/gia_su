@@ -383,7 +383,7 @@ a.bp-title-button:hover {
 #buddypress .item-body h4,
 #buddypress #item-body h4{
     font-size: 22px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 
@@ -1666,7 +1666,7 @@ a.tie-cart span.shooping-count {
     padding: 8px 10px 0;
     height: 32px;
     color: #FFF;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;/*BebasNeueRegular*/
     font-size: 14pt;
 }
 
@@ -1831,7 +1831,7 @@ body.error404 .post-title {
     float: left;
     margin-right: 10px;
     font-size: 22px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 .cat-box-title h2 a {
@@ -2389,7 +2389,7 @@ a.more-link {
     float: left;
     margin-right: 10px;
     font-size: 26px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
     color: #000;
 }
 
@@ -2650,7 +2650,7 @@ a.go-to-the-post:hover {
 }
 
 .post-title {
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
     margin-bottom: 10px;
     font-size: 28px;
 }
@@ -3006,7 +3006,7 @@ p.post-meta span {
     float: left;
     color: #FFF;
     padding: 0 9px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
     font-size: 14pt;
     height: 45px;
     line-height: 50px;
@@ -3283,7 +3283,7 @@ blockquote p {
     float: left;
     margin-right: 10px;
     font-size: 22px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 #related_posts .post-listing,
@@ -3560,7 +3560,7 @@ blockquote p {
     float: left;
     margin-right: 10px;
     font-size: 20px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 .widget-top h4 a {
@@ -4703,7 +4703,7 @@ p.welcome-text {
 .weather_name {
     font-size: 24pt;
     margin-bottom: 10px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 .weather_desc {
@@ -5671,7 +5671,7 @@ html[xmlns] .slides {
 .full-width .content .slider-caption h2 {
     color: #FFF;
     font-size: 35px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 .slider-caption h2,
@@ -5786,7 +5786,7 @@ html[xmlns] .slides {
 .ei-title h2 {
     color: #b5b5b5;
     font-size: 35px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
     background: #000;
     float: right;
     padding: 5px;
@@ -5908,7 +5908,7 @@ html[xmlns] .slides {
 .sitemap-col h2 {
     color: #111;
     font-size: 24px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
     border-bottom: 1px solid #e9e9e9;
     padding-bottom: 5px;
 }
@@ -5944,7 +5944,7 @@ ul.authors-wrap li {
 ul.authors-wrap li h3 {
     font-size: 22px;
     text-transform: capitalize;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
     margin: 0 0 5px;
 }
 
@@ -6286,7 +6286,7 @@ ul.timeline li.timeline-post:before {
 
 .footer-widget-top h4 {
     font-size: 22px;
-    font-family: BebasNeueRegular, arial, Georgia, serif;
+    font-family: arial, Georgia, serif;
 }
 
 .footer-widget-container {
@@ -8979,3 +8979,5 @@ body.dark-skin .tie-instagram.default-skin a:hover{
         width: 100%;
     }    
 }
+
+.widget-container{max-height: 455px; overflow: auto}

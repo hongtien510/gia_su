@@ -260,7 +260,7 @@ jQuery(document).ready(function() {
 			jQuery(this).addClass( 'button-primary builder_active' );
 			
 			jQuery( '#Home_Builder' ).fadeIn();
-			jQuery( '#postdivrich, #pageparentdiv, #postimagediv, #tie_post_head_options_box, #tie_ads_options_box, #tie-template-authors, #tie-template-blog, #tie_sidebar_position_full' ).hide();
+			jQuery( '#postdivrich, #pageparentdiv, #postimagediv, #tie_post_head_options_box, #tie_ads_options_box, #tie-template-authors, #tie-template-blog' ).hide();//, #tie_sidebar_position_full
 
 			jQuery( '#tie_builder_active' ).val( 'yes' );
 		
