@@ -5,6 +5,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>
+<link rel='stylesheet' href="<?php echo get_bloginfo('url'); ?>/wp-content/themes/gia_su/custom.css" type='text/css' media='all'/>
+<script type='text/javascript' src='<?php echo get_bloginfo('url'); ?>/wp-content/themes/gia_su/js/jquery.validate.min.js'></script>
 </head>
 <?php global $is_IE ?>
 <body id="top" <?php body_class(); ?>>

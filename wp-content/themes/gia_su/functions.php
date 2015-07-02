@@ -27,4 +27,13 @@ if( tie_get_option( 'live_search' ) )
 if( !tie_get_option( 'disable_arqam_lite' ) )
 	require_once ( get_template_directory() . '/framework/functions/arqam-lite.php');
 
+include 'post-type/register-post-type.php';
+define( 'RWMB_URL', trailingslashit( get_stylesheet_directory_uri() . '/meta-box' ) );
+define( 'RWMB_DIR', trailingslashit( STYLESHEETPATH . '/meta-box' ) );
+require_once 'meta-box/meta-box.php';
+include 'meta-box/custom/add-meta-box.php';
+//include 'libs/page-nav.php';	
+require_once ( get_template_directory() . '/libs/page-nav.php'    );
+	
 ?>
+
