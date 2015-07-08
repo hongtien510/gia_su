@@ -42,6 +42,9 @@
     	if($file['name']!="")
     	{
     		$name=date('Ymd-His').'-'.$file['name'];
+            $image = get_bloginfo('url').'/wp-content/uploads/'.date('Y').'/'.date('m').'/'.$name;
+            move_uploaded_file($file['tmp_name'],'wp-content/uploads/'.date('Y').'/'.date('m').'/'.$name);
+            /*
             $my_post = array(
               'post_title'    => $name,
               'post_content'  => '',
@@ -53,8 +56,8 @@
               'guid' => get_bloginfo('url').'/wp-content/uploads/'.date('Y').'/'.date('m').'/'.$name,
             );
             $image = wp_insert_post( $my_post );
-            if($image > 0)
-                move_uploaded_file($file['tmp_name'],'wp-content/uploads/'.date('Y').'/'.date('m').'/'.$name);
+            */
+            
     	}
         
         add_post_meta( $post_id, 'username-gia-su', $username);

@@ -174,8 +174,7 @@ $meta_boxes[] =array(
 		array(
 			'name'             => 'Hình ảnh',
 			'id'               => "image-gia-su",
-			'type'             => 'image',
-            'max_file_uploads' => 1
+			'type'             => 'text'
 		),
 		array(
 			'name'             => 'Giới tính',
