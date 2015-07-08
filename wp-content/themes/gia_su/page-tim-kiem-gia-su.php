@@ -133,22 +133,33 @@ else:?>
                         <h4>Thông tin cá nhân</h4>
                         <table>
                             <?php
-                                if(isset($_GET['location'])){
-                                    $array_location = array(
+                                $array_location = array(
                                                 'ho-chi-minh' => 'TP.Hồ Chí Minh', 
                                                 'binh-duong' => 'Bình Dương',
-                                                'ha-noi' => 'Hà Nội'
+                                                'bien-hoa' => 'Biên Hòa',
+                                                'dong-nai' => 'Đồng Nai'
                                                 );
+                                if(isset($_GET['location'])){
                                     $location = $_GET['location'];
-                                    if(array_key_exists($location, $array_location)){
+                                }
                             ?>
                                 <tr>
                                     <td>Vị trí:</td>
-                                    <td><input readonly="readonly" class="full-width" type="text" name="location" value="<?php echo $array_location[$location]; ?>" /></td>
+                                    <td>
+                                        <select name="location">
+                                            <option value="">Chọn</option>
+                                            <?php
+                                                foreach($array_location as $key => $value){
+                                                    $selected = $location == $key ? 'selected="selected"' : '';
+                                                    echo '<option '.$selected.' value="'.$value.'">'.$value.'</option>';
+                                                }
+                                            ?>
+                                        </select>
+                                    </td>
                                 </tr>
                             <?php
-                                    }
-                                }
+                                    
+                                
                             ?>
                             
                             <tr>

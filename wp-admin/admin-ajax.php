@@ -1,4 +1,5 @@
 <?php
+
 /**
  * WordPress AJAX Process Execution.
  *
@@ -20,6 +21,19 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 
 /** Load WordPress Bootstrap */
 require_once( dirname( dirname( __FILE__ ) ) . '/wp-load.php' );
+
+
+if(isset($_POST['gia_su'])){
+    $city = $_POST['city'];
+    $district = $wpdb->get_results("SELECT * FROM quanhuyen WHERE `MaTinhThanh` = $city AND `XuatBan` = 1 ORDER BY `ThuTu`");
+    $option = '<option value="">Chọn</option>';
+    foreach($district as $value){
+        $option .= '<option value="'.$value->TenQuanHuyen.'">'.$value->TenQuanHuyen.'</option>';
+    }
+    echo $option;
+    exit;
+}
+
 
 /** Allow for cross-domain requests (from the frontend). */
 send_origin_headers();
@@ -95,5 +109,6 @@ if ( is_user_logged_in() ) {
 	 */
 	do_action( 'wp_ajax_nopriv_' . $_REQUEST['action'] );
 }
+
 // Default status
 die( '0' );

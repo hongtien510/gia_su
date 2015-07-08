@@ -25,7 +25,7 @@ span.required{color:red}
   display: inline-block;
   height: 30px;
   line-height: 30px;
-  color: blue;
+  /*color: blue;*/
   padding: 0 10px;
   font-size: 15px;
 }
@@ -33,28 +33,107 @@ span.required{color:red}
 .top-nav ul li:hover > a,
 .top-nav ul:hover > a,
 .top-nav ul li.current-menu-item a {
-    color: #4169E1;
+    /*color: #4169E1;*/
     font-size: 15px;
 }
 
+.top-nav ul li {
+    background: #8ec71b none repeat scroll 0 0;
+    border-right: 1px solid #0095d0;
+}
 
+.cat-box-title h2 {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+    padding: 2px 10px 0;
+}
+.block-head h3, #respond h3{
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+    padding: 2px 10px 0;
+    color: #f88c00;
+}
+.widget-top h4 {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    color: #f88c00;
+    margin-right: 10px;
+    padding: 2px 10px;
+}
 
+.block-head,
+.cat-box-title {
+    background: #8ec71b none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 0;
+}
+.stripe-line {
+    margin-top: 10px;
+}
 
+#sidebar .stripe-line {
+    margin-top: 9px;
+}
 
+.widget-top {
+    background: #8ec71b none repeat scroll 0 0;
+    bottom: -4px;
+    padding: 6px 0;
+    position: relative;
+}
 
+.pagination a, .pagination span.extend, .pagination span.current {
+    color: #fff;
+}
 
+#sidebar .widget-top {
+    background: #8ec71b none repeat scroll 0 0;
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    margin: 0 0 4px;
+}
 
+.cat-box-title h2 a {
+    color: #f88c00;
+}
 
+.pagination .pages {
+    color: #fff;
+}
 
+.breaking-news span.breaking-news-title {
+    padding: 4px 10px 0;
+}
+#crumbs span,
+#crumbs a{color:#fff}
 
+.comment-respond .stripe-line{}
 
+.ghi_chu {
+    color: #555;
+    display: block;
+    font-size: 9px;
+    margin-bottom: -5px;
+    margin-top: -8px;
+    line-height: 15px;
+}
 
-
-
-
-
-
-
-
+body{
+	background:#dcdcdc !important; 
+}
+.cat-box {
+    margin-bottom: 20px;
+}
+.widget {
+    clear: both;
+    margin-bottom: 15px;
+}
+.recent-box-pagination {
+    margin: 0px 0 35px;
+    position: relative;
+}
 
 

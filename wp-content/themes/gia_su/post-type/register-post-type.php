@@ -72,5 +72,40 @@ function register_tim_giasu() {
 	register_post_type('tim-gia-su',$tim_giasu);
 }
 
+add_action( 'init', 'register_giasu' );
+function register_giasu() {
+	$giasu_label = array(
+			'name' => _x('Đăng ký gia sư', 'Đăng ký gia sư'),
+			'singular_name' => _x('Đăng ký gia sư', 'Đăng ký gia sư'),
+			'add_new' => _x('Add New', 'Add New'),
+			'add_new_item' => __('Thêm mới'),
+			'edit_item' => __('Sửa '),
+			'new_item' => __('Thêm mới'),
+			'all_items' => __('Xem tất cả'),
+			'view_item' => __('Xem'),
+			'search_items' => __('Search'),
+			'not_found' =>  __('Not Find'),
+			'not_found_in_trash' => __('Not Find in Trash'),
+			'parent_item_colon' => '',
+		    'menu_name' => 'Đăng ký gia sư'
+	);
+	$giasu= array(
+			'labels' => $giasu_label,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'show_in_nav_menus'=>true,
+			'query_var' => true,
+			'rewrite' =>  array('slug'=>'gia-su'),
+			'capability_type' => 'post',
+			'has_archive' => true,
+			'hierarchical' => false,
+			'menu_position' => 5,
+			'taxonomy'		=>array(''),
+			'supports' => array('title')
+	);
+	register_post_type('gia-su',$giasu);
+}
 
 

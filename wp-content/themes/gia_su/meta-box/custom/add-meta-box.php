@@ -133,6 +133,129 @@ $meta_boxes[] =array(
 	 )
 );
 
+
+$meta_boxes[] =array(
+   'id'=>'gia-su',
+   'title'=>'Đăng ký gia sư',
+   'pages'=>array('gia-su'),
+   'context' => 'normal',
+   'priority' => 'high',
+   'fields' => array(
+        array(
+			'name'             => 'Họ tên',
+			'id'               => "username-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Ngày sinh',
+			'id'               => "birthday-gia-su",
+			'type'             => 'text'
+		),
+		array(
+			'name'             => 'Điện thoại bàn',
+			'id'               => "phone-gia-su",
+			'type'             => 'text'
+		),
+		array(
+			'name'             => 'Di động',
+			'id'               => "mobiphone-gia-su",
+			'type'             => 'text'
+		),
+		array(
+			'name'             => 'Email',
+			'id'               => "email-gia-su",
+			'type'             => 'text'
+		),
+		array(
+			'name'             => 'Địa chỉ',
+			'id'               => "address-gia-su",
+			'type'             => 'text'
+		),
+		array(
+			'name'             => 'Hình ảnh',
+			'id'               => "image-gia-su",
+			'type'             => 'image',
+            'max_file_uploads' => 1
+		),
+		array(
+			'name'             => 'Giới tính',
+			'id'               => "gender-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Tỉnh thành',
+			'id'               => "city-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Quận/Huyện',
+			'id'               => "district-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Trình độ',
+			'id'               => "trinhdo-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Học trường',
+			'id'               => "school-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Chuyên ngành',
+			'id'               => "chuyennganh-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Năm tốt nghiệp',
+			'id'               => "namtotnghiep-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Hiện tại là',
+			'id'               => "hientaila-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Lớp dạy',
+			'id'               => "lopday-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Môn dạy',
+			'id'               => "monday-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Khu vực dạy',
+			'id'               => "khuvucday-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Thời gian dạy',
+			'id'               => "thoigianday-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Lượng yêu cầu',
+			'id'               => "luongyeucau-gia-su",
+			'type'             => 'text'
+		),
+        array(
+			'name'             => 'Số buổi',
+			'id'               => "sobuoi-gia-su",
+			'type'             => 'text'
+		),
+		array(
+			'name'             => 'Mô tả thêm',
+			'id'               => "motathem-gia-su",
+			'type'             => 'textarea'
+		),
+	 )
+);
+
+
 function register_meta_boxes(){
 	if ( !class_exists( 'RW_Meta_Box' ) )
 		return;
