@@ -18,7 +18,7 @@ if ( ! class_exists( 'RWMB_Text_Field' ) )
 		{
 		  if($field['field_name'] == 'image-gia-su'){
                 return sprintf(
-    				'<img style="max-height:100px" src="'.$meta.'"/><br/><input type="text" class="rwmb-text" name="%s" id="%s" value="%s" placeholder="%s" size="%s" %s>%s',
+    				'<img style="max-height:100px" src="'.get_bloginfo('url').'/'.$meta.'"/><br/><input type="text" class="rwmb-text" name="%s" id="%s" value="%s" placeholder="%s" size="%s" %s>%s',
     				$field['field_name'],
     				$field['id'],
     				$meta,

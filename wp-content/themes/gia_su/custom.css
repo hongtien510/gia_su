@@ -1,5 +1,5 @@
-.class-new li{list-style: none !important;}
-.class-new h4{color:blue}
+.list-custom li{list-style: none !important;}
+.list-custom h4{color:blue}
 .full-width{width:100%}
 span.required{color:red}
 .alert-success {
@@ -135,5 +135,58 @@ body{
     margin: 0px 0 35px;
     position: relative;
 }
+#related_posts, #author-box {
+    margin-top: 20px;
+}
+
+.list-custom img {
+    height: 250px;
+    max-width: 200px;
+}
+
+.list-gia-su table tr td:last-child{position:relative}
+.list-gia-su .more-link{
+    bottom: 15px;
+    position: absolute;
+}
+.list-gia-su h4{margin-top: 15px}
+.list-gia-su a{color:blue}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

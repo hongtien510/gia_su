@@ -128,7 +128,7 @@ if(tie_get_option('breadcrumbs')){
  
     if ( get_query_var('paged') ) {
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-      echo ' - '.__ti('page' ) . ' ' . get_query_var('paged');
+      echo '<span> - '.__ti('page' ) . ' ' . get_query_var('paged').'</span>';
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
     }
  
