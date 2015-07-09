@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php 
+get_header(); ?>
 
 <?php if ( ! have_posts() ) : ?>
 <div class="content">
@@ -81,6 +82,9 @@ else:?>
 					<ul class="list-custom list-gia-su">
                             <?php
                                 global $paged;
+                                if(isset($_GET['trang'])){
+                                    $paged = $_GET['trang'];
+                                }
                                 $args = array('post_type' => 'gia-su', 'posts_per_page' => 1, 'order' => desc, 'paged' => $paged);
                                 $wp_query = new WP_Query($args);
                                 
@@ -132,7 +136,7 @@ else:?>
 			</div><!-- .post-inner -->
 		</article><!-- .post-listing -->
         <?php 
-            if ($wp_query->max_num_pages > 1) tie_pagenavi(); 
+            if ($wp_query->max_num_pages > 1) tie_pagenavi(false, false, "trang"); 
             wp_reset_query();
         ?>
 		<?php endwhile; ?>

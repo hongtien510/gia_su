@@ -439,11 +439,12 @@ add_filter('excerpt_more', 'tie_remove_excerpt');
 
 /*-----------------------------------------------------------------------------------*/
 # Page Navigation
+//TIEN ADD $span
 /*-----------------------------------------------------------------------------------*/
-function tie_pagenavi( $query = false, $num = false ){
+function tie_pagenavi( $query = false, $num = false, $span = '' ){
 	?>
 	<div class="pagination">
-		<?php tie_get_pagenavi( $query, $num ) ?>
+		<?php tie_get_pagenavi( $query, $num, '', '', $span ) ?>
 	</div>
 	<?php
 }

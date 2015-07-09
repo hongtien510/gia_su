@@ -29,7 +29,7 @@ Author URI: http://lesterchan.net
 
 
 ### Function: Page Navigation: Boxed Style Paging
-function tie_get_pagenavi($query = false, $num = false , $before = '', $after = '') {
+function tie_get_pagenavi($query = false, $num = false , $before = '', $after = '', $span = '') {
 	global $wpdb, $wp_query;
 	$pagenavi_options = tie_pagenavi_init(); 
 	
@@ -107,7 +107,11 @@ function tie_get_pagenavi($query = false, $num = false , $before = '', $after = 
 					}
 					if ($start_page >= 2 && $pages_to_show < $max_page) {
 						$first_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $pagenavi_options['first_text']);
-						echo '<a href="'.esc_url(get_pagenum_link()).'" class="first" title="'.$first_page_text.'">'.$first_page_text.'</a>';
+                        $link = esc_url(get_pagenum_link($i));
+                        if($span == 'trang'){
+                            $link = str_replace('/page/', '?trang=', $link);
+                        }
+                        echo '<a href="'.$link.'" class="first" title="'.$first_page_text.'">'.$first_page_text.'</a>';
 						if(!empty($pagenavi_options['dotleft_text'])) {
 							echo '<span class="extend">'.$pagenavi_options['dotleft_text'].'</span>';
 						}
@@ -115,7 +119,11 @@ function tie_get_pagenavi($query = false, $num = false , $before = '', $after = 
 					if($larger_page_to_show > 0 && $larger_start_page_start > 0 && $larger_start_page_end <= $max_page) {
 						for($i = $larger_start_page_start; $i < $larger_start_page_end; $i+=$larger_page_multiple) {
 							$page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), $pagenavi_options['page_text']);
-							echo '<a href="'.esc_url(get_pagenum_link($i)).'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
+                            $link = esc_url(get_pagenum_link($i));
+                            if($span == 'trang'){
+                                $link = str_replace('/page/', '?trang=', $link);
+                            }
+                            echo '<a href="'.$link.'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
 						}
 					}
 					previous_posts_link($pagenavi_options['prev_text']);
@@ -125,12 +133,16 @@ function tie_get_pagenavi($query = false, $num = false , $before = '', $after = 
 							echo '<span class="current">'.$current_page_text.'</span>';
 						} else {
 							$page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), $pagenavi_options['page_text']);
-							echo '<a href="'.esc_url(get_pagenum_link($i)).'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
+							$link = esc_url(get_pagenum_link($i));
+                            if($span == 'trang'){
+                                $link = str_replace('/page/', '?trang=', $link);
+                            }
+                            echo '<a href="'.$link.'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
 						}
 					}
 					if( empty($query) ){ ?>
 					<span id="tie-next-page">
-					<?php } next_posts_link($pagenavi_options['next_text'], $max_page);
+					<?php } next_posts_link($pagenavi_options['next_text'], $max_page, 'trang');
 					if( empty($query) ){?>
 					</span>
 					<?php
@@ -138,7 +150,11 @@ function tie_get_pagenavi($query = false, $num = false , $before = '', $after = 
 					if($larger_page_to_show > 0 && $larger_end_page_start < $max_page) {
 						for($i = $larger_end_page_start; $i <= $larger_end_page_end; $i+=$larger_page_multiple) {
 							$page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), $pagenavi_options['page_text']);
-							echo '<a href="'.esc_url(get_pagenum_link($i)).'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
+                            $link = esc_url(get_pagenum_link($i));
+                            if($span == 'trang'){
+                                $link = str_replace('/page/', '?trang=', $link);
+                            }
+                            echo '<a href="'.$link.'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
 						}
 					}
 					if ($end_page < $max_page) {
@@ -146,7 +162,11 @@ function tie_get_pagenavi($query = false, $num = false , $before = '', $after = 
 							echo '<span class="extend">'.$pagenavi_options['dotright_text'].'</span>';
 						}
 						$last_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $pagenavi_options['last_text']);
-						echo '<a href="'.esc_url(get_pagenum_link($max_page)).'" class="last" title="'.$last_page_text.'">'.$last_page_text.'</a>';
+                        $link = esc_url(get_pagenum_link($i));
+                        if($span == 'trang'){
+                            $link = str_replace('/page/', '?trang=', $link);
+                        }
+                        echo '<a href="'.$link.'" class="last" title="'.$last_page_text.'">'.$last_page_text.'</a>';
 					}
 
 			//echo '</div>'.$after."\n";

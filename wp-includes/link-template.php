@@ -2051,7 +2051,7 @@ function next_posts( $max_page = 0, $echo = true ) {
  * @param int $max_page Optional. Max pages.
  * @return string|null HTML-formatted next posts page link.
  */
-function get_next_posts_link( $label = null, $max_page = 0 ) {
+function get_next_posts_link( $label = null, $max_page = 0, $span = '') {
 	global $paged, $wp_query;
 
 	if ( !$max_page )
@@ -2074,8 +2074,11 @@ function get_next_posts_link( $label = null, $max_page = 0 ) {
 		 * @param string $attributes Attributes for the anchor tag.
 		 */
 		$attr = apply_filters( 'next_posts_link_attributes', '' );
-
-		return '<a href="' . next_posts( $max_page, false ) . "\" $attr>" . preg_replace('/&([^#])(?![a-z]{1,8};)/i', '&#038;$1', $label) . '</a>';
+        $link = next_posts( $max_page, false );
+        if($span == 'trang'){
+            $link = str_replace('/page/', '?trang=', $link);
+        }
+		return '<a href="' . $link . "\" $attr>" . preg_replace('/&([^#])(?![a-z]{1,8};)/i', '&#038;$1', $label) . '</a>';
 	}
 }
 
@@ -2087,8 +2090,8 @@ function get_next_posts_link( $label = null, $max_page = 0 ) {
  * @param string $label Content for link text.
  * @param int $max_page Optional. Max pages.
  */
-function next_posts_link( $label = null, $max_page = 0 ) {
-	echo get_next_posts_link( $label, $max_page );
+function next_posts_link( $label = null, $max_page = 0 , $span = '') {
+	echo get_next_posts_link( $label, $max_page, $span );
 }
 
 /**
