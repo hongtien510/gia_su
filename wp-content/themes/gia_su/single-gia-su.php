@@ -123,7 +123,7 @@
 					<ul class="list-custom list-gia-su">
                             <?php
                                 global $paged;
-                                $args = array('post_type' => 'gia-su-online', 'posts_per_page' => 5, 'order' => desc, 'post_status' => 'publish',
+                                $args = array('post_type' => 'gia-su', 'posts_per_page' => 5, 'order' => desc, 'post_status' => 'publish',
                                                 'meta_query' => array(
                                                     array(
                                                         'key'     => 'khuvucday-gia-su',

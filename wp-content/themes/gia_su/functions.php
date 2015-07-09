@@ -34,6 +34,13 @@ require_once 'meta-box/meta-box.php';
 include 'meta-box/custom/add-meta-box.php';
 //include 'libs/page-nav.php';	
 require_once ( get_template_directory() . '/libs/page-nav.php'    );
+
+add_action( 'parse_query','changept' );
+function changept() {
+    if( is_category() && !is_admin() )
+        set_query_var( 'post_type', array( 'post', 'gia_su' ) );
+    return;
+}
 	
 ?>
 
