@@ -99,7 +99,7 @@ else:?>
                                         </td>
                                         <td valign="top">
                                             <div style="margin-left: 10px;">
-                                                <h4><a href=""><?php the_title(); ?></a></h4>
+                                                <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                                                 <strong>Trình độ: </strong><?php echo get_post_meta(get_the_id(),'trinhdo-gia-su',true); ?><br />
                                                 <strong>Học trường: </strong><?php echo get_post_meta(get_the_id(),'school-gia-su',true); ?><br />
                                                 <strong>Chuyên ngành: </strong><?php echo get_post_meta(get_the_id(),'chuyennganh-gia-su',true); ?><br />
