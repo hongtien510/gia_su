@@ -81,7 +81,7 @@ else:?>
 					<ul class="list-custom list-gia-su">
                             <?php
                                 global $paged;
-                                $args = array('post_type' => 'gia-su', 'posts_per_page' => 2, 'order' => desc, 'paged' => $paged);
+                                $args = array('post_type' => 'gia-su-online', 'posts_per_page' => 1, 'order' => desc, 'paged' => $paged);
                                 $wp_query = new WP_Query($args);
                                 
                                 if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post(); 

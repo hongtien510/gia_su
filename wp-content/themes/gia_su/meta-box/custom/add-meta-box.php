@@ -135,9 +135,9 @@ $meta_boxes[] =array(
 
 
 $meta_boxes[] =array(
-   'id'=>'gia-su',
-   'title'=>'Đăng ký gia sư',
-   'pages'=>array('gia-su'),
+   'id'=>'gia-su-online',
+   'title'=>'Gia sư online',
+   'pages'=>array('gia-su-online'),
    'context' => 'normal',
    'priority' => 'high',
    'fields' => array(

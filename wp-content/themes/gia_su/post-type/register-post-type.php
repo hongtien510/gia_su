@@ -75,8 +75,8 @@ function register_tim_giasu() {
 add_action( 'init', 'register_giasu' );
 function register_giasu() {
 	$giasu_label = array(
-			'name' => _x('Đăng ký gia sư', 'Đăng ký gia sư'),
-			'singular_name' => _x('Đăng ký gia sư', 'Đăng ký gia sư'),
+			'name' => _x('Gia sư online', 'Gia sư online'),
+			'singular_name' => _x('Gia sư online', 'Gia sư online'),
 			'add_new' => _x('Add New', 'Add New'),
 			'add_new_item' => __('Thêm mới'),
 			'edit_item' => __('Sửa '),
@@ -87,7 +87,7 @@ function register_giasu() {
 			'not_found' =>  __('Not Find'),
 			'not_found_in_trash' => __('Not Find in Trash'),
 			'parent_item_colon' => '',
-		    'menu_name' => 'Đăng ký gia sư'
+		    'menu_name' => 'Gia sư online'
 	);
 	$giasu= array(
 			'labels' => $giasu_label,
@@ -97,7 +97,7 @@ function register_giasu() {
 			'show_in_menu' => true,
 			'show_in_nav_menus'=>true,
 			'query_var' => true,
-			'rewrite' =>  array('slug'=>'gia-su'),
+			'rewrite' =>  array('slug'=>'gia-su-online'),
 			'capability_type' => 'post',
 			'has_archive' => false,
 			'hierarchical' => false,
@@ -105,7 +105,7 @@ function register_giasu() {
 			'taxonomy'		=>array(''),
 			'supports' => array('title')
 	);
-	register_post_type('gia-su',$giasu);
+	register_post_type('gia-su-online',$giasu);
 }
 
 

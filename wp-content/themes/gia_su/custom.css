@@ -153,8 +153,21 @@ body{
 .list-gia-su a{color:blue}
 
 
-
-
+.ctn-detail-gs{display: inline-block; margin-bottom: 20px; width: 100%;}
+div.img-gs{float:left}
+div.img-gs img{
+    border: 1px solid #ddd;
+    height: 250px;
+    max-width: 200px;
+    padding: 3px;
+}
+div.detail-gs {
+    float: left;
+    margin-left: 20px;
+    width: 60%;
+}
+div.detail-gs h4{margin-top:10px}
+.ctn-detail-gs .more-info{float:left; width:100%; margin-top:20px}
 
 
 
