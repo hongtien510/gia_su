@@ -168,7 +168,21 @@ div.detail-gs {
 }
 div.detail-gs h4{margin-top:10px}
 .ctn-detail-gs .more-info{float:left; width:100%; margin-top:20px}
-
+.footer-bottom .social-icons{float:left !important; margin-left:0px}
+.copyright{float:left; clear:both}
+.footer-right{width:60%}
+.footer-right .footer1{float:left}
+.footer-right .footer2{float:right}
+@media only screen and (max-width: 500px){
+	.footer-right{width:100%}
+	.footer-right .footer1{width:100%}
+	.footer-right .footer2{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		width: 100%;
+	}
+	.copyright{width:100%}
+}
 
 
 
