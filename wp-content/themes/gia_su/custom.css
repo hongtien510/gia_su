@@ -183,8 +183,18 @@ div.detail-gs h4{margin-top:10px}
 	}
 	.copyright{width:100%}
 }
+@media only screen and (max-width: 730px){
+	.footer-right .footer1{width:100%}
+	.footer-right .footer2{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		width: 100%;
+	}
+}
 
-
+@media only screen and (max-width: 900px){
+	.copyright{width:100%}
+}
 
 
 

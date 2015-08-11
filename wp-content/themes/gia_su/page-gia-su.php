@@ -85,7 +85,7 @@ else:?>
                                 if(isset($_GET['trang'])){
                                     $paged = $_GET['trang'];
                                 }
-                                $args = array('post_type' => 'gia-su', 'posts_per_page' => 1, 'order' => desc, 'paged' => $paged);
+                                $args = array('post_type' => 'gia-su', 'posts_per_page' => 10, 'order' => desc, 'paged' => $paged);
                                 $wp_query = new WP_Query($args);
                                 
                                 if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post(); 

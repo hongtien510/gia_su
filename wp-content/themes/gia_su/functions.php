@@ -41,6 +41,18 @@ function changept() {
         set_query_var( 'post_type', array( 'post', 'gia_su' ) );
     return;
 }
+/*
+add_action('wp_head', 'wp_head_handler');
+function wp_head_handler() {
+    echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+    echo '<meta charset="utf-8" />';
+    echo '<meta name="description" content="'.get_bloginfo('description').'" />';
+    echo '<meta name="keywords" content="'.get_bloginfo('keywords').'" />';
+    echo '<meta name="author" content="http://taowebsite.net" />';
+    echo '<meta content="vi-VN" itemprop="inLanguage" />';
+}
+*/
+
 	
 ?>
 
