@@ -1,0 +1,4 @@
+RewriteRule ^tim-kiem-gia-su/([a-zA-Z0-9_-]+)$ /_/2015/gia_su/www/index.php?page_id=74&location=$1 [L]
+
+#RewriteRule ^tim-kiem-gia-su/([a-zA-Z0-9_-]+)$ /_/2015/gia_su/www/index.php?page_id=74&location=$1 [L]
+#RewriteRule ^tim-kiem-gia-su/([a-zA-Z0-9_-]+).html$ /_/2015/gia_su/www/index.php?page_id=74&location=$1 [L]

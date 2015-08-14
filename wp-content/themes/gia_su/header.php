@@ -6,6 +6,21 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <meta name="description" content="<?php echo get_post_meta($post->ID, "_yoast_wpseo_metadesc", true); ?>" />
 <meta name="keywords" content="<?php echo get_post_meta($post->ID, "_yoast_wpseo_focuskw", true); ?>" />
+   
+<?php 
+	if (has_post_thumbnail( $post->ID ) ){ 
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+?>
+			<meta property="og:image" content="<?php echo $image[0]; ?>"/>
+			<meta name="twitter:image" content="<?php echo $image[0]; ?>"/>
+<?php 
+	}
+	else{
+?>
+	<meta property="og:image" content="http://trungtamgiasuonline.com/wp-content/uploads/2015/06/logo.png"/>
+	<meta name="twitter:image" content="http://trungtamgiasuonline.com/wp-content/uploads/2015/06/logo.png"/>
+<?php }?>
+
 <?php wp_head(); ?>
 <link rel='stylesheet' href="<?php echo get_bloginfo('url'); ?>/wp-content/themes/gia_su/custom.css" type='text/css' media='all'/>
 <script type='text/javascript' src='<?php echo get_bloginfo('url'); ?>/wp-content/themes/gia_su/js/jquery.validate.min.js'></script>
