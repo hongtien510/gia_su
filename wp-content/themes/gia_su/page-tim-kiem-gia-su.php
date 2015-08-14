@@ -139,9 +139,18 @@ else:?>
                                                 'bien-hoa' => 'Biên Hòa',
                                                 'dong-nai' => 'Đồng Nai'
                                                 );
+								$url = $_SERVER['REQUEST_URI'];
+								$location = '';
+								foreach($array_location as $key => $value){
+									if(strpos($url, $key) != ''){
+										$location = $key;
+									}
+								}
+								/*
                                 if(isset($_GET['location'])){
                                     $location = $_GET['location'];
                                 }
+								*/
                             ?>
                                 <tr>
                                     <td>Vị trí:</td>
