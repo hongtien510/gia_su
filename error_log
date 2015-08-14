@@ -1,1 +1,24 @@
 [08-Jul-2015 08:19:12 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Table 'taowebsi_giasu.tinhthanh' doesn't exist với truy vấn SELECT * FROM tinhthanh WHERE `XuatBan` = 1 ORDER BY `ThuTu` yêu cầu bởi require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/gia_su/page-dang-ky-lam-gia-su.php')
+[25-Jul-2015 16:09:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/trungt47/public_html/wp-content/themes/gia_su/functions.php:47) in /home/trungt47/public_html/wp-includes/pluggable.php on line 1196
+[25-Jul-2015 16:21:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/trungt47/public_html/wp-content/themes/gia_su/functions.php:47) in /home/trungt47/public_html/wp-includes/pluggable.php on line 1196
+[27-Jul-2015 12:02:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/trungt47/public_html/wp-content/themes/gia_su/page-dang-ky-lam-gia-su.php on line 224
+[04-Aug-2015 05:18:24 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[04-Aug-2015 05:18:24 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[05-Aug-2015 19:51:31 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[05-Aug-2015 19:52:44 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[06-Aug-2015 04:48:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/trungt47/public_html/wp-content/themes/gia_su/page-dang-ky-lam-gia-su.php on line 224
+[07-Aug-2015 13:16:51 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[07-Aug-2015 13:20:48 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[07-Aug-2015 14:35:06 UTC] PHP Warning:  error_log() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/wp-db.php on line 1288
+[08-Aug-2015 01:27:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/trungt47/public_html/wp-includes/taxonomy.php on line 229
+[08-Aug-2015 01:27:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/trungt47/public_html/wp-includes/taxonomy.php on line 229
+[09-Aug-2015 15:42:30 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/trungt47/public_html/wp-includes/taxonomy.php on line 229
+[09-Aug-2015 15:42:30 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/trungt47/public_html/wp-includes/taxonomy.php on line 229
+[10-Aug-2015 04:22:57 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[10-Aug-2015 04:23:17 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[12-Aug-2015 00:50:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/trungt47/public_html/wp-content/themes/gia_su/page-dang-ky-lam-gia-su.php on line 224
+[12-Aug-2015 02:38:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/trungt47/public_html/wp-content/themes/gia_su/page-dang-ky-lam-gia-su.php on line 224
+[13-Aug-2015 00:21:20 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/trungt47/public_html/wp-includes/taxonomy.php on line 229
+[13-Aug-2015 00:21:20 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/trungt47/public_html/wp-includes/taxonomy.php on line 229
+[13-Aug-2015 09:43:08 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287
+[13-Aug-2015 10:28:20 UTC] PHP Warning:  ini_set() has been disabled for security reasons in /home/trungt47/public_html/wp-includes/load.php on line 287

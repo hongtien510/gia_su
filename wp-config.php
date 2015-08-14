@@ -16,22 +16,49 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'gia_su');
+$domain_name =  !empty($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
+if ($domain_name == "" || $domain_name == "localhost" || strpos($domain_name, "192.168.1") !== FALSE) {
+	define('DB_NAME', 'gia_su');
 
-/** MySQL database username */
-define('DB_USER', 'root');
+	/** MySQL database username */
+	define('DB_USER', 'root');
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
+	/** MySQL database password */
+	define('DB_PASSWORD', '');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+}
+else if(strpos($domain_name, "taowebsite.net") !== FALSE){
+	define('DB_NAME', 'taowebsi_giasu');
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+	/** MySQL database username */
+	define('DB_USER', 'taowebsi_giasu');
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+	/** MySQL database password */
+	define('DB_PASSWORD', 'Pht%1090');
+
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+}
+else{
+	define('DB_NAME', 'trungt47_giasu');
+
+	/** MySQL database username */
+	define('DB_USER', 'trungt47_giasu');
+
+	/** MySQL database password */
+	define('DB_PASSWORD', 'Pht%1090');
+
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+}
+
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8mb4');
+
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
