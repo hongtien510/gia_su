@@ -41,7 +41,7 @@
 ?>
 
 <?php get_header(); ?>
-
+<script type='text/javascript' src='<?php echo get_bloginfo('url'); ?>/wp-content/themes/gia_su/js/jquery.validate.min.js'></script>
 <?php if ( ! have_posts() ) : ?>
 <div class="content">
 	<?php get_template_part( 'framework/parts/not-found' ); ?>
