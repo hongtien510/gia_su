@@ -16,6 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define( 'WPCACHEHOME', 'D:\www\_\2015\gia_su\www\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
 $domain_name =  !empty($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
 if ($domain_name == "" || $domain_name == "localhost" || strpos($domain_name, "192.168.1") !== FALSE) {
 	define('DB_NAME', 'gia_su');
@@ -96,6 +97,8 @@ $table_prefix  = 'tw_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+
+define( 'WP_CACHE', true );
 
 /* That's all, stop editing! Happy blogging. */
 
