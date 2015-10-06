@@ -81,7 +81,7 @@ else:?>
 					<ul class="list-custom">
                         <?php
                             global $paged;
-                            $args = array('post_type' => 'lop-moi', 'posts_per_page' => 2, 'order' => desc, 'paged' => $paged);
+                            $args = array('post_type' => 'lop-moi', 'posts_per_page' => 6, 'order' => desc, 'paged' => $paged);
                             $wp_query = new WP_Query($args);
                             
                             if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post(); 
